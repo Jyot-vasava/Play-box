@@ -1,0 +1,93 @@
+/* Header.css */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(17, 17, 43);
+  padding: 10px 20px;
+  color: #ffffff;
+  z-index: 1000000;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 4px 8px rgba(59, 59, 171,0.4);
+  position: fixed; /* Ensure the header is positioned correctly */
+  width: 100%;
+  top: 0; /* Position at the top */
+  left: 0;
+  height: 60px; /* Define a fixed height for the header */
+}
+
+.logo {
+  margin-top: 10px;
+  font-size: 35px;
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px; /* Larger font size */
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #333333; /* Dark gray text color on hover */
+  background-color: #e0e0e0; /* Soft gray background color on hover */
+}
+
+.sign-button {
+  background-color: #e50914;
+  border: none;
+  color: #ffffff;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sign-button:hover {
+  background-color: #b10610; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+/* Additional styles for dropdown in Header.css */
+.header .relative button {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header ul {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  color: black;
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure the dropdown is above other content */
+}
+
+.header ul li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.header ul li:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,99 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 660px; /* Adjust the height as needed */
+  overflow: hidden;
+  margin-top: 63px; /* Add a top margin equal to the height of the header */
+}
+
+.banner-slide-container {
+  display: flex;
+  transition: transform 2s ease-in; /* Smooth transition */
+}
+
+.banner-slide {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.banner-slide::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), transparent);
+}
+
+.banner-content {
+  color: white;
+  text-align: center;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.banner-button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smooth effect */
+}
+
+.banner-button:first-child {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.banner-button:last-child {
+  background-color: #ffffff;
+  color: black;
+}
+
+.banner-button:hover {
+  background-color: #1a1a1a; /* Change background color on hover */
+  color: #ffffff; /* Change text color on hover */
+}
+
+.banner-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.banner-arrow.left {
+  left: 10px;
+}
+
+.banner-arrow.right {
+  right: 10px;
+}
+
+.banner-arrow:hover {
+  color: #3b82f6;
+}
