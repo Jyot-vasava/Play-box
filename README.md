@@ -114,4 +114,3 @@
 ---
 
 
-Deplyed Link : https://playboxxx-frontend-a1ez.onrender.com/
