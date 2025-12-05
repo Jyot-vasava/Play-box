@@ -1,6 +1,8 @@
 # PlayBox  
 
-**PlayBox** is a cutting-edge web application that aggregates content from various OTT platforms, simplifying subscription management and content discovery. With an intuitive interface and advanced features, PlayBox provides users and administrators with a unified, seamless streaming experience.  
+**PlayBox** is a cutting-edge web application that aggregates content from various OTT platforms, simplifying subscription management and content discovery. With an intuitive interface and advanced features, PlayBox provides users and administrators with a unified, seamless streaming experience. 
+
+Live Demo : https://playboxxx-frontend-a1ez.onrender.com/
 
 ---
 
